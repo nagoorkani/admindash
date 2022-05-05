@@ -20,7 +20,7 @@ export default function Widgetlg() {
             <span className="widgetlgname">safi</span>
 
           </td>
-          <td className="widgetlgdate">4 may 2022</td>
+          <td className="widgetlgdate">2 may 2022</td>
           <td className="widgetlgamount">$22.22</td>
           <td className="widgetlgstatus"><Button type='declined' /> </td>
 
@@ -31,7 +31,7 @@ export default function Widgetlg() {
             <span className="widgetlgname">salman</span>
 
           </td>
-          <td className="widgetlgdate">3 may 2022</td>
+          <td className="widgetlgdate">2 may 2022</td>
           <td className="widgetlgamount">$72.22</td>
           <td className="widgetlgstatus"><Button type='approved' /> </td>
 
@@ -51,7 +51,7 @@ export default function Widgetlg() {
             <span className="widgetlgname">imran</span>
 
           </td>
-          <td className="widgetlgdate">1 may 2022</td>
+          <td className="widgetlgdate">2 may 2022</td>
           <td className="widgetlgamount">$27.22</td>
           <td className="widgetlgstatus"><Button type='approved' /> </td>
 
