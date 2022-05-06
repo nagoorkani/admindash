@@ -1,9 +1,7 @@
-import "./sidebar.css"
+import "./Sidebar.css"
 import React from "react"
 import HomeIcon from '@mui/icons-material/Home';
 import MultilineChartIcon from '@mui/icons-material/MultilineChart';
-
-
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import { AccountCircle, Email, Feedback, Inventory, ManageAccounts, Message, ReportGmailerrorredOutlined, ReportSharp } from "@mui/icons-material";
 import { Link } from "react-router-dom";
@@ -33,7 +31,7 @@ export default function Sidebar() {
                  <ul className="sodebarlist">
                   <Link to="/users" className="link" >
                        <li className="sidebarlist">
-                          <AccountCircle className="sidebaricon"/> Users
+                          <AccountCircle className="sidebaricon"/>Users
                        </li>
                  </Link>  
                  <li className="sidebarlist">

@@ -1,18 +1,10 @@
-.chart{
+.chart {
     margin: 20px;
     padding: 20px;
-    justify-content: center;
-}
-.charttitle{
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .chartTitle {
     margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 15px -10px #000000; 
-    box-shadow: 0px 0px 15px -10px #000000;
-}
-.crtimg{
-    margin-left: 300px;
-    width: 500px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  }

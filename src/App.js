@@ -1,40 +1,33 @@
 import React from "react";
-import Sidebar from "./components/sidebar/Sidebar";
-import Topbar from "./components/topbar/Topbar";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Topbar from "./Components/Topbar/Topbar";
 import "./App.css" ;
-import Home from "./pages/home/Home";
+import Home from "./Pages/Home/Home";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 
 } from "react-router-dom";
-import Userlist from "./pages/userlist/Userlist";
-import User from "./pages/user/User";
-import Newuser from "./pages/newuser/Newuser";
+import Userlist from "./Pages/UserList/UserList";
+import User from "./Pages/User/User";
+import Newuser from "./Pages/NewUser/NewUser";
 
-function app() {
+function App() {
   return (
    <Router>
     <Topbar />
      <div className="container">
        <Sidebar />
        <Switch>
-         <Route exact path="/">
-           <Home/>
-         </Route>
-         <Route  path="/users">
-           <Userlist />
-         </Route>
-          <Route path="/user/:userID">
-            <User/>
-          </Route>
-          <Route path="/newuser">
-            <Newuser/>
-          </Route>
+        <Route path="/users" component={Userlist} />
+        <Route path="/user/:userID" component={User} />
+        <Route path="/newuser" component={Newuser} />
+        <Route exact path="/" component={Home} />
        </Switch>
      </div>
    </Router>
   );
 }
-export default app ;
+
+export default App ;

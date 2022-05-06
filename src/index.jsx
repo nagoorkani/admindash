@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, {StrictMode} from 'react';
+import ReactDOM from "react-dom";
 import "@mui/icons-material"
 import "@mui/styled-engine"
 import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+ReactDOM.render( 
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>,
+  document.getElementById('root'),
 );

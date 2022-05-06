@@ -1,16 +1,17 @@
 import React from 'react'
-import Chart from '../../components/chart/Chart'
-import Featuredubfo from '../../components/featuredinfo/Featuredinfo'
-import Widgetlg from '../../components/widgetlg/Widgetlg'
-import Widgetsm from '../../components/widgetsm/Widgetsm'
+import Chart from '../../Components/Chart/Chart'
+import Featuredubfo from '../../Components/FeaturedInfo/FeaturedInfo'
+import Widgetlg from '../../Components/WidgetLg/WidgetLg'
+import Widgetsm from '../../Components/WidgetSm/WidgetSm'
+import {userData } from '../UserList/dummyData'
 
-import "./home.css"
+import "./Home.css"
 
 export default function Home() {
   return (
     <div className='home'>
     <Featuredubfo/>  
-    <Chart/>
+    <Chart data={userData} title="User Analytics" grid dataKey="Active User"/>
     <div className="homewidgets">
       <Widgetsm/>
       <Widgetlg/>

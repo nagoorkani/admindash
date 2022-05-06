@@ -1,5 +1,6 @@
 import React from 'react'
-import "./newuser.css"
+import "./NewUser.css"
+
 export default function Newuser() {
   return (
     <div className='newuser'>

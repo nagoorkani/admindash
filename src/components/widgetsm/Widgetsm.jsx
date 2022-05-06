@@ -1,8 +1,8 @@
 import { Visibility } from '@mui/icons-material'
 import React from 'react'
-import "./widgetsm.css"
+import "./WidgetSm.css"
 
-export default function Widgetsm() {
+export default function WidgetSm() {
   return (
     <div className='widgetsm'>
       <span className="widgetsmtitle">New Join Members</span>

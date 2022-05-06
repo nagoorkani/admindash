@@ -1,8 +1,9 @@
 
-import "./user.css"
+import "./User.css"
 import sa from './a.jpg'
 import { CalendarToday , LocationSearching, MailOutline, PermIdentity, PhoneAndroid, Publish } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+
 export default function User() {
   return (
     <div className='user'>

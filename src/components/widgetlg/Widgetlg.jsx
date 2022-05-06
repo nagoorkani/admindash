@@ -1,6 +1,7 @@
 import React from 'react'
-import "./widgetlg.css"
-export default function Widgetlg() {
+import "./WidgetLg.css"
+
+export default function WidgetLg() {
   const Button = ({ type }) => {
     return <button className= {"Widgetlgbutton " + type }> {type} </button>;
   };
