@@ -10,7 +10,7 @@ export default function Widgetsm() {
           <li className="widgetsmlistitm">
               <img src="./image/s.png" alt="" className="widgetsmimage" />
                <div className="widgetsmuser">
-                   <span className="widgetsmusername">salman</span>
+                   <span className="widgetsmusername">Salman</span>
                    <span className="widgetsmusertitle">software developer</span>
                </div>
                <button className="widgetsmbutton">
@@ -22,7 +22,7 @@ export default function Widgetsm() {
           <li className="widgetsmlistitm">
               <img src="./image/r.png" alt="" className="widgetsmimage" />
                <div className="widgetsmuser">
-                   <span className="widgetsmusername">rasheed</span>
+                   <span className="widgetsmusername">Rasheed</span>
                    <span className="widgetsmusertitle">software developer</span>
                </div>
                <button className="widgetsmbutton">
@@ -33,7 +33,7 @@ export default function Widgetsm() {
           <li className="widgetsmlistitm">
               <img src="./image/a.jpg" alt="" className="widgetsmimage" />
                <div className="widgetsmuser">
-                   <span className="widgetsmusername">safi</span>
+                   <span className="widgetsmusername">afi</span>
                    <span className="widgetsmusertitle">software developer</span>
                </div>
                <button className="widgetsmbutton">
@@ -55,7 +55,7 @@ export default function Widgetsm() {
           <li className="widgetsmlistitm">
               <img src="./image/ah.png" alt="" className="widgetsmimage" />
                <div className="widgetsmuser">
-                   <span className="widgetsmusername">ahsan</span>
+                   <span className="widgetsmusername">Ahsan</span>
                    <span className="widgetsmusertitle">software developer</span>
                </div>
                <button className="widgetsmbutton">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import {React,  useState } from 'react' ;
 import "./userlist.css"
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from '@mui/icons-material';
@@ -6,10 +6,10 @@ import { DeleteOutline } from '@mui/icons-material';
 import { userrows } from './dummydata' ;
 import { Link } from 'react-router-dom';
 export default function Userlist() {
-  const [ data , setData]  = useState ( userrows )
+  const [ data , setData]  = useState ( userrows ) ;
   
-  const handleDelete = (id) =>{
-      setData (data.filter ((item )=>item.id !== id ));
+  const handleDelete = (id) => {
+      setData(data.filter ((item )=>item.id !== id ));
     };
 
     const columns = [
@@ -21,8 +21,9 @@ export default function Userlist() {
                     <img className='lovee' src={params.row.avator} alt=""/>
                     {params.row.userName}
                 </div>
-            )
-        } },
+            );
+         } ,
+        },
         { field: 'statuss', headerName: 'status', width: 90 },
        
         {
@@ -38,18 +39,20 @@ export default function Userlist() {
             width: 90,
         },
         {
-            field: "action" ,
-            headerName: "action" ,
-            width: 150 ,
-            renderCell: (params) => {
-                return(
-                    <>
-                    <Link to={"/user/" + params.row.id }>
-                      <button className="userlistedit"> edit </button> 
-                    </Link>
-                    <DeleteOutline  className='ss'  onClick ={ () => handleDelete(params.row.id) } />
-                    </>
-                );
+          field: "action" ,
+          headerName: "action" ,
+           width: 150 ,
+           renderCell: (params) => {
+             return (
+               <>
+                <Link to={"/user/"+params.row.id }>
+                  <button className="userlistedit"> edit </button> 
+               </Link>
+                <DeleteOutline 
+                 className='ss'  onClick ={ () => handleDelete(params.row.id) } 
+                />
+               </>
+               );
             },
         },
       ];
@@ -65,5 +68,5 @@ export default function Userlist() {
         checkboxSelection
       />
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
-import "./App.css"
+import "./App.css" ;
 import Home from "./pages/home/Home";
 import {
   BrowserRouter as Router,
@@ -11,12 +11,14 @@ import {
 } from "react-router-dom";
 import Userlist from "./pages/userlist/Userlist";
 import User from "./pages/user/User";
-function app(){
+import Newuser from "./pages/newuser/Newuser";
+
+function app() {
   return (
    <Router>
-    <Topbar/>
+    <Topbar />
      <div className="container">
-       <Sidebar/>
+       <Sidebar />
        <Switch>
          <Route exact path="/">
            <Home/>
@@ -24,12 +26,15 @@ function app(){
          <Route  path="/users">
            <Userlist />
          </Route>
-          <Route path={"/User/ : id"} >
-          <User/>
-         </Route>
+          <Route path="/user/:userID">
+            <User/>
+          </Route>
+          <Route path="/newuser">
+            <Newuser/>
+          </Route>
        </Switch>
      </div>
-  </Router>
-);
+   </Router>
+  );
 }
 export default app ;

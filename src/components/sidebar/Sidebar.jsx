@@ -6,6 +6,8 @@ import MultilineChartIcon from '@mui/icons-material/MultilineChart';
 
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import { AccountCircle, Email, Feedback, Inventory, ManageAccounts, Message, ReportGmailerrorredOutlined, ReportSharp } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+
 export default function Sidebar() {
   return (
        <div className="sidebar">
@@ -13,28 +15,32 @@ export default function Sidebar() {
              <div className="sidebarmenu">
                  <h3 className="sidebartitle">Dashboard</h3>
                  <ul className="sodebarlist">
-                 <li className="sidebarlist active">
-                      <HomeIcon className="sidebaricon"/> Home
+                 <Link to="/" className="link">    
+                    <li className="sidebarlist active">
+                       <HomeIcon className="sidebaricon"/> Home
+                    </li>
+                 </Link>
+                 <li className="sidebarlist">
+                    <MultilineChartIcon className="sidebaricon" />     Analytics 
                  </li>
                  <li className="sidebarlist">
-                    <MultilineChartIcon className="sidebaricon" />     analytics 
-                 </li>
-                 <li className="sidebarlist">
-                     <TrendingUpIcon  className="sidebaricon" /> sales
+                     <TrendingUpIcon  className="sidebaricon" /> Sales
                  </li> 
                  </ul>
              </div>
              <div className="sidebarmenu">
                  <h3 className="sidebartitle">Quickmenu</h3>
                  <ul className="sodebarlist">
+                  <Link to="/users" className="link" >
+                       <li className="sidebarlist">
+                          <AccountCircle className="sidebaricon"/> Users
+                       </li>
+                 </Link>  
                  <li className="sidebarlist">
-                      <AccountCircle className="sidebaricon"/> users
+                    < Inventory className="sidebaricon" />  Reports
                  </li>
                  <li className="sidebarlist">
-                    < Inventory className="sidebaricon" />  reports
-                 </li>
-                 <li className="sidebarlist">
-                     <ReportSharp className="sidebaricon" /> products
+                     <ReportSharp className="sidebaricon" /> Products
                  </li> 
                  </ul>
              </div>
@@ -42,13 +48,13 @@ export default function Sidebar() {
                  <h3 className="sidebartitle">Notification</h3>
                  <ul className="sodebarlist">
                  <li className="sidebarlist">
-                      <Email className="sidebaricon"/> mail
+                      <Email className="sidebaricon"/> Mail
                  </li>
                  <li className="sidebarlist">
-                    < Feedback className="sidebaricon" />  feedback
+                    < Feedback className="sidebaricon" />  Feedback
                  </li>
                  <li className="sidebarlist">
-                     <Message className="sidebaricon" /> messages
+                     <Message className="sidebaricon" /> Messages
                  </li> 
                  </ul>
              </div>
@@ -56,13 +62,13 @@ export default function Sidebar() {
                  <h3 className="sidebartitle">Staff</h3>
                  <ul className="sodebarlist">
                  <li className="sidebarlist">
-                      <ManageAccounts className="sidebaricon"/> manage
+                      <ManageAccounts className="sidebaricon"/> Manage
                  </li>
                  <li className="sidebarlist">
-                    <MultilineChartIcon className="sidebaricon" /> analayties 
+                    <MultilineChartIcon className="sidebaricon" /> Analayties 
                  </li>
                  <li className="sidebarlist">
-                     <ReportGmailerrorredOutlined className="sidebaricon" /> report
+                     <ReportGmailerrorredOutlined className="sidebaricon" /> Report
                  </li> 
                  </ul>
              </div>

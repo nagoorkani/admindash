@@ -19,9 +19,9 @@
     border: none;
     border-radius: 10px;
 }
-.Widgetlgbutton.approved{background-color: #e5faf2; color: #3bb077; }
-.Widgetlgbutton.declined{background-color: #fff0f1;color: darkred; }
-.Widgetlgbutton.pending{background-color: #ebf1fe;color: darkblue; }
+.Widgetlgbutton.Approved{background-color: #e5faf2; color: #3bb077; }
+.Widgetlgbutton.Declined{background-color: #fff0f1;color: darkred; }
+.Widgetlgbutton.Pending{background-color: #ebf1fe;color: darkblue; }
 .widgetlgtable{
     width: 100%;
     border-spacing: 20px;
