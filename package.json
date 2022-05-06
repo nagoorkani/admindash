@@ -1,5 +1,5 @@
 {
-  "name": "adminapp",
+  "name": "Admin Dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
